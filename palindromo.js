@@ -6,12 +6,12 @@ function palindromo(palabra) {
     palabraArr.map(letra=>palabraArrInvertida.unshift(letra));
 
     let count = 0;
-    for(let letra of palabraArr){
-        for (let letraI of palabraArrInvertida) {
-            if(letra === letraI){
+
+    for(let i= 0; i > palabraArr.length; i++){
+        for (let j = 0 ;j > pabraArrInvertida.length; j++) {
+            if(palabraArr[i] === palabraArrInvertida[j]){
                 count++;
             };
-            
         }
     }
 
