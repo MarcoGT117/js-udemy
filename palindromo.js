@@ -1,26 +1,17 @@
-let palabra = "hola";
-
 function palindromo(palabra) {
-    let palabraArr = Array.from(palabra);
-    let palabraArrInvertida = [];
-    palabraArr.map(letra=>palabraArrInvertida.unshift(letra));
-
-    let count = 0;
-
-    for(let i= 0; i > palabraArr.length; i++){
-        for (let j = 0 ;j > pabraArrInvertida.length; j++) {
-            if(palabraArr[i] === palabraArrInvertida[j]){
-                count++;
-            };
-        }
-    }
-
-    if (count == palabraArr.length) {
+    let palabraArr = Array.from(palabra); //Transforma el string dado en un string
+    let palabraArrInvertida = [...palabraArr].reverse(); //Invierte el array
+    let palabraInvertida = palabraArrInvertida.join(""); //Crea un string a partir del array invertido, join() elimina las comas que se generarian si solo se usara el metodo toString()
+        
+    if (palabra === palabraInvertida) {
         console.log("Es un palindromo");
-    } else{
+    } else {
         console.log("No es un palindromo");
     }
+}
 
-};
+let test = "hola";
+palindromo(test); // -> No es un palindromo
 
-palindromo(palabra);
+let test2 = "anitalavalatina";
+palindromo(test2); // -> Es un palindromo
