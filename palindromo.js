@@ -1,5 +1,3 @@
-let palabra = "hola";
-
 function palindromo(palabra) {
     let palabraArr = Array.from(palabra);
     let palabraArrInvertida = [];
@@ -20,10 +18,13 @@ function palindromo(palabra) {
 
     if (count == palabraArr.length) {
         console.log("Es un palindromo");
-    } else{
+    } else {
         console.log("No es un palindromo");
     }
+}
 
-};
+let test = "hola";
+palindromo(test); // -> No es un palindromo
 
-palindromo(palabra);
+let test2 = "anitalavalatina";
+palindromo(test2); // -> Es un palindromo

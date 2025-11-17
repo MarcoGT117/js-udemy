@@ -19,12 +19,12 @@ console.log(numbersA); /* -> Array(6) [ -12, 3, 5, 23, 2, 89 ]
 ​
                             length: 6
                             
-                            Imprime un array en su formate comun por separado
+                            Imprime un array en su formato comun por separado
                             */
 
 console.log(...numbersA); // -> -12 3 5 23 2 89    | Imprime los valores
 
-//Ejemplos
+//Ejemplos de uso
 
 //Enviar elementos a una funcion
 
