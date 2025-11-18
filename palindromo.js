@@ -9,11 +9,9 @@ function palindromo(palabra) {
     let count = 0;
 
     for(let i= 0; i < palabraArr.length; i++){
-        
             if(palabraArr[i] === palabraArrInvertida[i]){
                 count++;
             };
-        
     }
 
     if (count == palabraArr.length) {
